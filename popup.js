@@ -20,13 +20,28 @@ function selectedText() {
 
 document.addEventListener('DOMContentLoaded',  selectedText());
 
- 
 /////////////////////////////////////////////////////
 
-snow.addEventListener("click", async () => {
+inID.addEventListener("click", async () => {
      // FunctiononDOM("loadID('txtstandart');");
      // FunctiononDOM("loadCLASS('action-description-content-wrapper');");
      // FunctiononDOM("writeInCLASS('actions-quick-add-block-text', 'hellooo')");
-FunctiononDOM("writeinID('txtstandart', '"+textplan+"');");
+let textIN = 'любой текст шаблона';
+let idd = 'txtstandart'
+FunctiononDOM("writeinID('"+idd+"', '"+textIN+"');");
 });
 
+inClass.addEventListener("click", async () => {
+     // FunctiononDOM("loadID('txtstandart');");
+     // FunctiononDOM("loadCLASS('action-description-content-wrapper');");
+     // FunctiononDOM("writeInCLASS('actions-quick-add-block-text', 'hellooo')");
+let textIN = 'любой текст шаблона';
+let clas = 'class';
+FunctiononDOM("writeInCLASS('"+clas+"', '"+textIN+"');");
+});
+
+inSelector.addEventListener("click", async () => {
+let textIN = 'любой текст шаблона';
+let select = '#sdgBod > span.gb_Md.gb_bd';
+FunctiononDOM("writeInSELECTOR('"+select+"', '"+textIN+"');");
+});
