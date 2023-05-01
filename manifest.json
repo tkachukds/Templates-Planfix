@@ -1,0 +1,16 @@
+{
+    "name": "шаблонер Planfix",
+    "description": " by Tkachuk D.S.",
+    "author": "Ткачук Денис",
+    "version": "0.1",
+    "manifest_version": 2,
+    "browser_action": {      
+      "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts":["background.js"]
+},
+"permissions": [
+      "tabs", "<all_urls>" 
+  ]		   
+}
