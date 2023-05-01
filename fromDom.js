@@ -10,11 +10,24 @@ function loadCLASS(classes){
     alert(""+bod);
 }
 
+function loadSELECTOR(s){
+    var bod = document.querySelector(s).innerHTML;
+    alert(""+bod);
+}
+
 
 function writeinID(ID, txt){
     document.getElementById(ID).innerHTML=txt;
 }
 
 function writeInCLASS(classes, txt){
-    document.getElementsByClassName(classes).innerHTML=txt;
+    // alert(txt+' '+classes)
+   // document.getElementsByClassName(classes).innerHTML=txt;
+ document.getElementsByClassName(classes).textContent=txt;
+}
+
+
+function writeInSELECTOR(selector, txt){
+    // alert(txt+' '+classes)
+    document.querySelector(selector).textContent=txt;
 }

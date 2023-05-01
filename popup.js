@@ -20,13 +20,33 @@ function selectedText() {
 
 document.addEventListener('DOMContentLoaded',  selectedText());
 
- 
 /////////////////////////////////////////////////////
 
-snow.addEventListener("click", async () => {
+inID.addEventListener("click", async () => {
      // FunctiononDOM("loadID('txtstandart');");
      // FunctiononDOM("loadCLASS('action-description-content-wrapper');");
      // FunctiononDOM("writeInCLASS('actions-quick-add-block-text', 'hellooo')");
-FunctiononDOM("writeinID('txtstandart', '"+textplan+"');");
+let textIN = 'любой текст шаблона';
+let idd = 'txtstandart'
+FunctiononDOM("writeinID('"+idd+"', '"+textIN+"');");
 });
 
+inClass.addEventListener("click", async () => {
+     // FunctiononDOM("loadID('txtstandart');");
+     // FunctiononDOM("loadCLASS('action-description-content-wrapper');");
+     // FunctiononDOM("writeInCLASS('actions-quick-add-block-text', 'hellooo')");
+let textIN = 'любой текст шаблона';
+let clas = 'cke_editable cke_editable_themed cke_contents_ltr';
+FunctiononDOM("writeInCLASS('"+clas+"', '"+textIN+"');");
+});
+
+inSelector.addEventListener("click", async () => {
+let textIN = 'любой текст шаблона';
+let select = 'body';
+FunctiononDOM("writeInSELECTOR('"+select+"', '"+textIN+"');");
+});
+loadSelector.addEventListener("click", async () => {
+     let select = '#GreenText > div > div.title-and-active-users > div > div.b-task-title-wrapper';
+     FunctiononDOM("loadSELECTOR('"+select+"');");
+     });
+     
