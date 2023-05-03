@@ -49,4 +49,17 @@ loadSelector.addEventListener("click", async () => {
      let select = '#GreenText > div > div.title-and-active-users > div > div.b-task-title-wrapper';
      FunctiononDOM("loadSELECTOR('"+select+"');");
      });
-     
+////////////////////
+
+loadNameTask.addEventListener("click", async () => {
+     let select = '#GreenText > div > div.title-and-active-users > div > div.b-task-title-wrapper';
+     FunctiononDOM("loadSELECTOR('"+select+"');");
+     });
+
+function viewURL(){
+     FunctiononDOM("viewURL();");
+}
+
+loadURL.addEventListener("click", async () => {
+     viewURL();
+});

@@ -31,3 +31,7 @@ function writeInSELECTOR(selector, txt){
     // alert(txt+' '+classes)
     document.querySelector(selector).textContent=txt;
 }
+function viewURL(){
+    var url = document.location.search;
+    alert(url)
+}
